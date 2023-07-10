@@ -1,0 +1,27 @@
+// Colors
+
+@white: #FFFFFF;
+@black: #000000;
+@bch-white-blue: #E3F8FD;
+@bch-light-blue: #95BAFF;
+@bch-blue: #86B4FF;
+@bch-dark-blue: #9DB5FB;
+@bch-purple: #DEC9FF;
+@bch-dark-purple: #BFA8F8;
+@bch-peach: #D6BDC0;
+
+// Media Queries
+
+@phone-max: 600px;
+@laptop-min: 992px;
+@desktop-min: 1200px;
+
+.phone(@styles) {
+    @media screen and (max-width: @phone-max) { @styles(); }
+}
+.laptop(@styles) {
+    @media screen and (max-width: @laptop-min) { @styles(); }
+}
+.desktop(@styles) {
+    @media screen and (min-width: @laptop-min) { @styles(); }
+}
